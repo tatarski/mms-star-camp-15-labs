@@ -1,0 +1,57 @@
+Commands:
+
+cd
+mkdir/rmdir
+cp (-rfi)
+mv (-fi)
+rm (-rfi)
+
+chmod u=rwx,g-x,o+w file_path
+chmod u=rw,g=r,o=x file_path
+chmod 740 file_path
+
+echo
+cat
+date
+
+more/ less
+history
+grep pattern file_path
+file
+
+wc (-cmwl)
+head (-cn)
+tail (-cn)
+
+cut
+
+
+
+Standart INPUT >>>> program >>>> Standart OUTPUT
+
+
+
+
+
+Problem 1:
+
+1. Find history of commands --- history
+2. Find commands containing jobs --- grep jobs
+3. Count how many commands contain eog  ---  wc -l
+
+
+
+Solution 1:
+
+history > history1.txt
+grep jobs history1.txt > grepResult.txt
+wc -l grepResult.txt
+
+history   -->history1.txt-->   grep jobs   -->grepResult.txt-->    wc -l
+
+
+
+
+Solution 2:
+PIPE
+history | grep jobs | wc -l

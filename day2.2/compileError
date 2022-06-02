@@ -1,0 +1,14 @@
+square.c: In function ‘main’:
+square.c:4:5: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before numeric constant
+    4 |     123123
+      |     ^~~~~~
+square.c:4:11: error: expected ‘;’ before ‘scanf’
+    4 |     123123
+      |           ^
+      |           ;
+    5 |     scanf("%u", &n);
+      |     ~~~~~  
+square.c:6:24: error: ‘n’ undeclared (first use in this function)
+    6 |     for(int i = 0; i < n; i++) {
+      |                        ^
+square.c:6:24: note: each undeclared identifier is reported only once for each function it appears in
