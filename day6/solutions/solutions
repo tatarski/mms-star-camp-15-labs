@@ -1,0 +1,81 @@
+#include<stdio.h>
+int main() {
+    int a = 5;
+    printf("%p", &a);
+    return 0;
+}#include<stdio.h>
+int main() {
+    long factoriel_result = 1;
+    double e_sum = 1;
+    int N = 20;
+    for(int i = 1; i <= N; i++) {
+        factoriel_result *= i;
+        e_sum += 1./factoriel_result;
+
+    printf("%li\n", factoriel_result);
+    }
+    // printf("%d", factoriel_result);
+    printf("%f", e_sum);
+}#include<stdio.h>
+#include<math.h>
+int main() {
+    int N = 100;
+    double e_pow = pow(1.+1./N, N);
+    // printf("%d", factoriel_result);
+    printf("%f", e_pow);
+}#include<stdio.h>
+void printSymbols() {
+    for (char i = 0; i < 255; i++)
+    {
+        printf("%c %d \n", i, (int)i);
+    }
+}
+char capitalize(char sym) {
+    if(sym >= 'a' && sym <= 'z') {
+        return sym - 'a' + 'A';
+    }
+    return 0;
+}
+int factoriel(int n) {
+    if(n < 0) {
+        return -1;
+    } else if(n == 0) {
+        return 1;
+    } else {
+        return factoriel(n-1)*n;
+    }
+}
+int main() {
+    // What is going on?
+    // for(char i = 0; i < 255; i++) {
+    //     printf("%c %d \n", i, (int)i);
+    // }
+    return 0;
+}#include<stdio.h>
+void swap(int* a, int* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+void store_nth_letter(int n, char* res) {
+    *res = 'A' + n;
+}
+int main() {
+    int a = 100, b = 23;
+    swap(&a,&b);
+    printf("a=%d b=%d\n", a, b);
+}#include<stdio.h>
+void count_combinations(int n, int k, int* combination_count) {
+    if(n == k || k == 0) {
+        *combination_count = *combination_count + 1;
+        // *combination_count++; OPAAAA
+        return;
+    }
+    count_combinations(n-1, k-1, combination_count);
+    count_combinations(n-1, k, combination_count);
+}
+int main() {
+    int result = 0;
+    count_combinations(10, 6, &result);
+    printf("%d", result);
+}
