@@ -1,0 +1,12 @@
+-rw-rw-r-- 1 dimitar-tatarski dimitar-tatarski   554 юни 23 09:56 1.c
+-rw-rw-r-- 1 dimitar-tatarski dimitar-tatarski   922 юни 23 11:10 2.c
+-rw-rw-r-- 1 dimitar-tatarski dimitar-tatarski   179 юни 23 11:21 3.c
+-rwxrwxr-x 1 dimitar-tatarski dimitar-tatarski 16736 юни 23 11:29 a.out
+-rw-rw-r-- 1 dimitar-tatarski dimitar-tatarski   139 юни 23 11:28 dup2.c
+-rwxrwxr-x 1 dimitar-tatarski dimitar-tatarski 16792 юни 23 09:48 exec
+-rw-rw-r-- 1 dimitar-tatarski dimitar-tatarski   307 юни 23 09:48 exec.c
+-rw-rw-r-- 1 dimitar-tatarski dimitar-tatarski   867 юни 23 09:33 fork.c
+-rw-rw-r-- 1 dimitar-tatarski dimitar-tatarski    13 юни 23 11:29 testErr
+-rw-rw-r-- 1 dimitar-tatarski dimitar-tatarski   509 юни 23 10:45 time.c
+-rwxrwxr-x 1 dimitar-tatarski dimitar-tatarski 16840 юни 23 10:56 timeMeasureTest
+
